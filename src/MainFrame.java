@@ -12,7 +12,7 @@ public class MainFrame extends JFrame {
 
         cards.add(center(new LoginPanel()), "login");         // 🆕 كرت 1 واسمه "login"
         cards.add(center(new SignUpPanel()), "signup");       // 🆕 كرت 2 واسمه "signup"
-
+        cards.add(center(new HallsListPanel()), "hallsList");     // 🆕 كرت 3 واسمه "hallsList"
         add(cards);                                           // 🆕 نحط الصندوق في النافذة
 
         pack();                                               // حجم النافذة على قد أكبر شاشة

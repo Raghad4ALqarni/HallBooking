@@ -108,6 +108,8 @@ public class LoginPanel extends javax.swing.JPanel {
         } else {
             // TODO (Server): send login request to server and check username & password
             System.out.println("Login: " + username);                 // مؤقتاً نطبع (بعدين نرسل للسيرفر)
+            MainFrame frame = (MainFrame) SwingUtilities.getWindowAncestor(this); // نجيب النافذة الرئيسية اللي إحنا داخلها
+            frame.showScreen("hallsList", "Halls list");                              // نعرض شاشة القاعات ونغير عنوان النافذة
         }
     }//GEN-LAST:event_loginButtonActionPerformed
 
